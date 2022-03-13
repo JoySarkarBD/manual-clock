@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(225deg, #2da747, #439d2d73);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.clock {
+  background: white;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border: 3px solid #144244;
+  border-radius: 50%;
+  position: relative;
+}
+.clock:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    285deg,
+    rgba(0, 0, 0, 0.175) 50%,
+    rgba(0, 0, 0, 0.1) 50%
+  );
+}
+.clock:before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  width: 20px;
+  transform: translate(-50%, -50%);
+  height: 20px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+}
+.number {
+  text-align: center;
+  font-size: 35px;
+  width: 100%;
+  font-family: system-ui;
+  height: 100%;
+  color: #3b685c;
+  padding: 10px;
+  position: absolute;
+}
+.number::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 12px;
+  top: 0px;
+  left: 50%;
+  background-color: #3b685c;
+}
+.hand {
+  position: absolute;
+  left: 50%;
+  transform-origin: bottom;
+  transform: translate(-50%);
+  background-color: #144244;
+}
+.second {
+  width: 2px;
+  height: 43%;
+  background: red;
+  top: 7%;
+  z-index: 1;
+}
+.minute {
+  width: 4px;
+  height: 35%;
+  top: 15%;
+  background: black;
+}
+.hour {
+  width: 6px;
+  height: 30%;
+  top: 20%;
+  background: black;
+}
+.number.item1 {
+  transform: rotate(30deg);
+}
+
+.number.item2 {
+  transform: rotate(60deg);
+}
+
+.number.item3 {
+  transform: rotate(90deg);
+}
+
+.number.item4 {
+  transform: rotate(120deg);
+}
+
+.number.item5 {
+  transform: rotate(150deg);
+}
+
+.number.item6 {
+  transform: rotate(180deg);
+}
+
+.number.item7 {
+  transform: rotate(210deg);
+}
+
+.number.item8 {
+  transform: rotate(240deg);
+}
+
+.number.item9 {
+  transform: rotate(270deg);
+}
+
+.number.item10 {
+  transform: rotate(300deg);
+}
+
+.number.item11 {
+  transform: rotate(330deg);
+}
+
+div.one {
+  transform: rotate(-30deg);
+}
+
+div.two {
+  transform: rotate(-60deg);
+}
+
+div.three {
+  transform: rotate(270deg);
+}
+
+div.four {
+  transform: rotate(-120deg);
+}
+
+div.five {
+  transform: rotate(200deg);
+}
+
+div.six {
+  transform: rotate(180deg);
+}
+
+div.seven {
+  transform: rotate(150deg);
+}
+
+div.eight {
+  transform: rotate(120deg);
+}
+
+div.nine {
+  transform: rotate(90deg);
+}
+
+div.ten {
+  transform: rotate(60deg);
+}
+
+div.eleven {
+  transform: rotate(30deg);
+}
